@@ -27,4 +27,13 @@ app.get('/test', (req, res) => {
 });
 app.use('/api/bookings', bookingRouter);
 
+app.use(utils.errorHandler);
+
+app.use((req, res) => {
+  res.status(404).json({
+    status: 'error',
+    message: 'Endpoint not found',
+  });
+});
+
 app.listen(utils.PORT, () => console.log('Server listening at port 3000'));
