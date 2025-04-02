@@ -26,8 +26,8 @@ This is a Node.js and Express-based REST API for managing restaurant bookings. I
 ### Clone the Repository
 
 ```sh
-git clone <your-repository-url>
-cd <your-repository-folder>
+git clone https://github.com/Tribhuwan-Joshi/booking
+cd booking
 ```
 
 ### Install Dependencies
